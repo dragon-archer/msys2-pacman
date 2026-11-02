@@ -1,24 +1,11 @@
 if [[ -n "$MSYSTEM" ]]; then
-  readonly -a UTILS_NAME=('bsdtar'
-                          'bzip2'
-                          'bzr'
-                          'cat'
-                          'ccache'
-                          'distcc'
-                          'git'
-                          'gpg'
-                          'gzip'
-                          'hg'
-                          'lzip'
-                          'lzop'
-                          'openssl'
-                          'svn'
-                          'tput'
-                          'uncompress'
-                          'xargs'
-                          'xz'
-                          'zstd'
-                         )
+  readonly -a UTILS_NAME=(
+    'bsdtar'
+    'file'
+    'gpg'
+    'grep'
+    'sed'
+  )
 
   for wrapper in ${UTILS_NAME[@]}; do
     eval "
